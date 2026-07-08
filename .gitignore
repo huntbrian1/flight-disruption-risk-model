@@ -1,0 +1,6 @@
+data/raw/*.csv
+bts_on_time_performance_3season_nov_jan.csv
+data/processed/*.csv
+.ipynb_checkpoints/
+__pycache__/
+*.pyc

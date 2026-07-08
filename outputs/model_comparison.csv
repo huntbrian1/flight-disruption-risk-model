@@ -1,0 +1,4 @@
+Model,Accuracy,Precision,Recall,F1,ROC_AUC,PR_AUC
+Base RF,0.566,0.273,0.629,0.38,0.627,0.31
+Holiday-Aware RF,0.574,0.278,0.631,0.386,0.636,0.321
+Season-Calibrated RF,0.617,0.302,0.618,0.406,0.666,0.363

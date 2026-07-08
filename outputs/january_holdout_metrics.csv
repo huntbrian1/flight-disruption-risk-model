@@ -1,0 +1,2 @@
+Model,Accuracy,Precision,Recall,F1,ROC_AUC,PR_AUC
+Holiday-Aware RF | Prior History + Latest Nov/Dec → Latest Jan,0.478,0.272,0.665,0.386,0.559,0.286

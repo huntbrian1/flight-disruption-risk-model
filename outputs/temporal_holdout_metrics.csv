@@ -1,0 +1,2 @@
+Model,Accuracy,Precision,Recall,F1,ROC_AUC,PR_AUC
+Holiday-Aware RF | Prior Seasons → Latest Season,0.565,0.304,0.563,0.395,0.591,0.317
