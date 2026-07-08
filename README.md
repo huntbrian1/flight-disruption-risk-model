@@ -188,6 +188,18 @@ Both are useful, but they answer slightly different questions. Holiday-Aware RF 
 
 ---
 
+### Risk Concentration — The Practical Business Value
+
+The strongest operational result is the model's ability to **concentrate risk**. Across the full random-split test set, the baseline disruption rate was about 21.2%. In the top 10% highest-scored flights, the realized disruption rate increased to about 38.6% — roughly **1.82x the baseline rate**.
+
+That does not mean the model reduces disruption by itself. It means the model can isolate a more disruption-dense subset of flights before the outcome is known. For an operations team with limited monitoring, customer support, or on-call staffing capacity, this is the practical value: **the model provides a defensible way to prioritize attention instead of treating all scheduled flights as equally risky.**
+
+This is the difference between:
+- *"We know holiday/winter flying is risky in general"* (descriptive)
+- *"Here is a ranked list of the flights most likely to need attention this operating window"* (actionable)
+
+---
+
 ### Season context in practice — the L12M idea
 
 Season context is like giving the model a "what kind of operating environment are we in?" layer. In a real deployment, a team wouldn't wait until the end of a season to apply this. Instead, they'd use **recent trend signals to calibrate the risk screen**:
