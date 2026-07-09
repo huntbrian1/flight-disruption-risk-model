@@ -48,6 +48,23 @@ Each cluster of bars represents one of the four analytical windows. Each bar wit
 
 ---
 
+## Disruption Components Across All Three Seasons
+
+![Disruption Components All Seasons](images/disruption_components_all_seasons.png)
+
+This chart breaks disruption down into its components — arrival delay ≥15 min, cancellation, and diversion — aggregated across all three seasons for each operating window. It shows not just how much disruption occurred, but **what kind**.
+
+**Key findings:**
+
+- Across all windows, the majority of disruption is delay-driven, not cancellation-driven
+- The January 15–30 baseline is the outlier: its cancellation rate (~4.7%) dwarfs every other window and represents a structurally different risk profile
+- Christmas and New Year's disruption is almost entirely delay-based — which calls for connection management and customer communication, not rebooking infrastructure
+- Diversion rates are low across all windows but non-zero, particularly in winter storm-prone periods
+
+**Operational implication:** Disruption type determines the operational response. Delay-heavy windows need monitoring and gate coverage. Cancellation-heavy windows need rebooking capacity and escalation staffing. Treating all disruption as equivalent would misallocate resources.
+
+---
+
 ## Disruption Rate by Scheduled Departure Time Block
 
 ![Disruption Rate by Time Block](images/timeblock_disruption_rate.png)
@@ -230,8 +247,9 @@ flight-disruption-risk-model/
 ├── flight_disruption_3season_final_polished.ipynb   # Full analysis notebook
 ├── images/
 │   ├── disruption_rate_by_period_season.png
-│   ├── model_comparison_auc.png
-│   └── timeblock_disruption_rate.png
+│   ├── disruption_components_all_seasons.png
+│   ├── timeblock_disruption_rate.png
+│   └── model_comparison_auc.png
 ├── outputs/                                          # Exported CSV summaries
 └── README.md
 ```
