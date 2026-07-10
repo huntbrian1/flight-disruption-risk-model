@@ -81,7 +81,7 @@ This chart shows how disruption risk changes throughout the day, broken out by h
 
 Scheduled departure time is not a causal variable — late flights don't cause disruption. It's a **proxy for accumulated network stress**. Aircraft rotations, crew timing, gate constraints, airport congestion, and earlier delays compound as the day progresses. By the time a 7 PM or 8 PM flight is scheduled to push back, it has inherited the operational pressure built up over the entire day.
 
-In the latest season (2025–2026), late-day disruption reached ~36.0% during Christmas Week and ~40.4% during New Year's Week. Those are observed rates, not model scores.
+In the latest season (2025–2026), late-day disruption reached **~36.0% during Christmas Week** and **~40.4% during New Year's Week**. Those are observed rates, not model scores.
 
 **Operational implication:** When a holiday/winter window is already elevated, late afternoon and evening flights deserve disproportionate monitoring attention. This chart gives operations teams a consistent, data-backed basis for that triage.
 
@@ -207,9 +207,9 @@ Both are useful, but they answer slightly different questions. Holiday-Aware RF 
 
 ### Risk Concentration — The Practical Business Value
 
-The strongest operational result is the model's ability to **concentrate risk**. Across the full random-split test set, the baseline disruption rate was about 21.2%. In the top 10% highest-scored flights, the realized disruption rate increased to about 38.6% — roughly **1.82x the baseline rate**.
+The Holiday-Aware Random Forest achieved a ROC-AUC of 0.636 on a random held-out test set against a 21.2% baseline disruption rate. In the latest season (2025–2026), observed late-day disruption reached **40.4% during New Year's Week** and **36.0% during Christmas Week** — the operating windows the model is designed to prioritize.
 
-That does not mean the model reduces disruption by itself. It means the model can isolate a more disruption-dense subset of flights before the outcome is known. For an operations team with limited monitoring, customer support, or on-call staffing capacity, this is the practical value: **the model provides a defensible way to prioritize attention instead of treating all scheduled flights as equally risky.**
+That does not mean the model reduces disruption by itself. It means the model can identify flight characteristics and operating windows associated with meaningfully higher disruption concentration. For an operations team with limited monitoring, customer support, or on-call staffing capacity, this is the practical value: **the model provides a defensible way to prioritize attention instead of treating all scheduled flights as equally risky.**
 
 This is the difference between:
 - *"We know holiday/winter flying is risky in general"* (descriptive)
